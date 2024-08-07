@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
     <head>
         <title>Calculadora</title>
@@ -10,7 +9,7 @@
 
     <body>
         <div class="fundo">
-            <h1>Criado por ana</h1>
+            <h1>Criado por Ana Beatriz</h1>
             <div class="Calculadora">
                 <h1>Calculadora</h1>
                 <p id="resultado"></p>
@@ -47,14 +46,14 @@
             </div>
         </div>
         <script>
-            fufnction incert (num)
+            function insert (num)
             {
                 var numero=document.getElementById (resultado).innerHTML;
                 document.getElementById (resultado).innerHTML = numero+num;
             }
             function clean ()
             {document.getElementById(resultado).innerHTML="";
-
+            
             }
             function back ()
             {
@@ -62,18 +61,18 @@
                 document.getElementById(resultado).innerHTML= resultado.substring(0, resultado.length -1);
             }
             function celular ()
-        {
-            var resultado= document.getElementById(resultado)innerHTML;
+            {
+            var resultado= document.getElementById(resultado).innerHTML;
             if (resultado)
-        {
+            {
             document.getElementById(resultado).innerHTML= eval(resultado)
-
-        }
-        else
-        {
+            
+            }
+            else
+            {
             document.getElementById(resultado).innerHTML= "nada para calcular";
-        }
-        }
+            }
+            }
             </script>
     </body>
 </html>
